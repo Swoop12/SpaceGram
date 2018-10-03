@@ -22,7 +22,7 @@ class CustomButton: UIButton {
             self.setTitleColor(.white, for: .normal)
         }
         
-        self.backgroundColor = UIColor.gray
+        self.backgroundColor = UIColor.white
         
         self.layer.shadowRadius = 2
         self.layer.shadowOpacity = 0.5

@@ -8,20 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		692ED296212A09140013003D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 692ED295212A09140013003D /* AppDelegate.swift */; };
-		692ED298212A09140013003D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 692ED297212A09140013003D /* ViewController.swift */; };
 		692ED29B212A09140013003D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 692ED299212A09140013003D /* Main.storyboard */; };
 		692ED29D212A09170013003D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 692ED29C212A09170013003D /* Assets.xcassets */; };
 		692ED2A0212A09170013003D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 692ED29E212A09170013003D /* LaunchScreen.storyboard */; };
+		692ED2AD212A25C30013003D /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 692ED2AC212A25C30013003D /* CustomButton.swift */; };
+		696A7DC4212A2AE400E4DA06 /* HeaderLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696A7DC3212A2AE400E4DA06 /* HeaderLabel.swift */; };
+		696A7DC7212A319600E4DA06 /* DesignableButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696A7DC6212A319600E4DA06 /* DesignableButton.swift */; };
+		696A7DC9212A367000E4DA06 /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696A7DC8212A367000E4DA06 /* CustomView.swift */; };
+		F73B57BE21650C5200F58EC6 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73B57BD21650C5200F58EC6 /* WelcomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		692ED292212A09140013003D /* SpaceGram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpaceGram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		692ED295212A09140013003D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		692ED297212A09140013003D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		692ED29A212A09140013003D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		692ED29C212A09170013003D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		692ED29F212A09170013003D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		692ED2A1212A09170013003D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		692ED2AC212A25C30013003D /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		696A7DC3212A2AE400E4DA06 /* HeaderLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderLabel.swift; sourceTree = "<group>"; };
+		696A7DC6212A319600E4DA06 /* DesignableButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignableButton.swift; sourceTree = "<group>"; };
+		696A7DC8212A367000E4DA06 /* CustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
+		F73B57BD21650C5200F58EC6 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,13 +63,25 @@
 			isa = PBXGroup;
 			children = (
 				692ED295212A09140013003D /* AppDelegate.swift */,
-				692ED297212A09140013003D /* ViewController.swift */,
 				692ED299212A09140013003D /* Main.storyboard */,
 				692ED29C212A09170013003D /* Assets.xcassets */,
 				692ED29E212A09170013003D /* LaunchScreen.storyboard */,
+				F73B57BD21650C5200F58EC6 /* WelcomeViewController.swift */,
 				692ED2A1212A09170013003D /* Info.plist */,
+				696A7DC5212A2AEB00E4DA06 /* CustomViews */,
 			);
 			path = SpaceGram;
+			sourceTree = "<group>";
+		};
+		696A7DC5212A2AEB00E4DA06 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				692ED2AC212A25C30013003D /* CustomButton.swift */,
+				696A7DC3212A2AE400E4DA06 /* HeaderLabel.swift */,
+				696A7DC6212A319600E4DA06 /* DesignableButton.swift */,
+				696A7DC8212A367000E4DA06 /* CustomView.swift */,
+			);
+			path = CustomViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -99,7 +119,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 692ED28D212A09140013003D /* Build configuration list for PBXProject "SpaceGram" */;
+			buildConfigurationList = 692ED28D212A09140013003D /* Build configuration list for PBXProject "SpaceGramCopy" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -135,8 +155,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				692ED298212A09140013003D /* ViewController.swift in Sources */,
+				696A7DC4212A2AE400E4DA06 /* HeaderLabel.swift in Sources */,
 				692ED296212A09140013003D /* AppDelegate.swift in Sources */,
+				696A7DC9212A367000E4DA06 /* CustomView.swift in Sources */,
+				F73B57BE21650C5200F58EC6 /* WelcomeViewController.swift in Sources */,
+				696A7DC7212A319600E4DA06 /* DesignableButton.swift in Sources */,
+				692ED2AD212A25C30013003D /* CustomButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -317,7 +341,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		692ED28D212A09140013003D /* Build configuration list for PBXProject "SpaceGram" */ = {
+		692ED28D212A09140013003D /* Build configuration list for PBXProject "SpaceGramCopy" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				692ED2A2212A09170013003D /* Debug */,
